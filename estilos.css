@@ -1,0 +1,234 @@
+/* ===== ESTILO GENERAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #f5f5f5;
+    background:
+        radial-gradient(ellipse at top, #251044 0%, transparent 55%),
+        #08080d;
+    padding: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ===== ENCABEZADO ===== */
+header {
+    text-align: center;
+    padding: 65px 20px;
+    margin-bottom: 25px;
+    background: linear-gradient(135deg, #19082c, #11152e, #08080d);
+    border: 1px solid #722cff;
+    border-radius: 18px;
+    box-shadow: 0 0 25px #722cff35;
+}
+
+header h1 {
+    font-size: clamp(38px, 7vw, 65px);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #ffffff;
+    text-shadow: 0 0 8px #9d4dff, 0 0 25px #722cff;
+    padding-bottom: 15px;
+}
+
+header p {
+    text-align: center;
+    color: #b9b6d1;
+    font-size: 18px;
+}
+
+/* ===== SECCIONES ===== */
+section {
+    padding: 25px;
+    margin: 25px 0;
+    background: #111119;
+    border: 1px solid #29213d;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px #00000040;
+}
+
+h2 {
+    font-size: 27px;
+    padding: 0 0 15px;
+    margin-bottom: 18px;
+    color: #c18aff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #762bff;
+}
+
+h3 {
+    font-size: 20px;
+    padding: 15px 0 8px;
+    color: #42d9ff;
+}
+
+/* ===== PÁRRAFOS ===== */
+p {
+    font-size: 16px;
+    line-height: 1.8;
+    padding-bottom: 15px;
+    text-align: justify;
+    color: #dedde8;
+}
+
+/* ===== IMÁGENES ===== */
+img.imagen-kim {
+    width: 100%;
+    max-width: 460px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    padding: 0;
+    margin: 20px auto;
+    border: 2px solid #8b42ff;
+    border-radius: 12px;
+    box-shadow: 0 0 18px #812dff40;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img.imagen-kim:hover {
+    transform: scale(1.025);
+    box-shadow: 0 0 28px #9b4dff90;
+}
+
+/* ===== LISTAS ===== */
+ul, ol {
+    font-size: 16px;
+    padding: 10px 0 10px 30px;
+    line-height: 1.9;
+    color: #dedde8;
+}
+
+ul li, ol li {
+    padding: 5px 0;
+}
+
+li::marker {
+    color: #b16cff;
+}
+
+strong {
+    color: #ffffff;
+}
+
+/* ===== ENLACES ===== */
+a {
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #43dfff;
+    display: inline-block;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+a:hover {
+    color: #c18aff;
+    transform: translateX(5px);
+    text-decoration: underline;
+}
+
+/* ===== ¿SABÍAS QUE? ===== */
+.sabias-que {
+    background: linear-gradient(135deg, #1b1030, #111119);
+    border-left: 4px solid #a44dff;
+}
+
+.sabias-que h2 {
+    color: #d4a4ff;
+}
+
+/* ===== OPINIÓN PERSONAL ===== */
+.opinion-personal {
+    background: linear-gradient(135deg, #101c2b, #111119);
+    border-left: 4px solid #35d9ff;
+}
+
+.opinion-personal h2 {
+    color: #45ddff;
+    border-bottom-color: #35d9ff;
+}
+
+/* ===== PIE DE PÁGINA ===== */
+.pie-pagina {
+    padding: 35px 25px;
+    margin-top: 40px;
+    background: #0d0d15;
+    border: 1px solid #39235a;
+    border-top: 3px solid #8b42ff;
+    border-radius: 14px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.pie-pagina h2 {
+    text-align: center;
+    border-bottom: none;
+}
+
+.pie-pagina p {
+    text-align: center;
+}
+
+.frase {
+    padding: 20px 0 10px;
+    font-style: italic;
+}
+
+.cita {
+    color: #c18aff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.copyright {
+    padding-top: 20px;
+    margin-top: 15px;
+    border-top: 1px solid #30223e;
+    font-size: 13px;
+    color: #9994aa;
+}
+
+/* ===== ADAPTACIÓN A CELULARES ===== */
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    header {
+        padding: 40px 15px;
+    }
+
+    header h1 {
+        letter-spacing: 2px;
+    }
+
+    section {
+        padding: 18px;
+        margin: 18px 0;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    img.imagen-kim {
+        height: 240px;
+    }
+
+    .pie-pagina {
+        padding: 25px 15px;
+    }
+}
